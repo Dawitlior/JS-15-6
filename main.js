@@ -27,6 +27,31 @@
 //   }
 // }
 
+
+// 4.	צרו פונקציה המקבלת מהמשתמש טקסט, צבע וגודל, הפונקציה מדפיסה למסך את הטקסט בצבע שהמשתמש בחר בגודל שהמשתמש בחר.
+function printTheScreenFromTheUser(){
+  switch (select_id.value) {
+    case "sm":
+      my_h1.innerText = text_id.value;
+      my_h1.style.color = color_id.value;
+      my_h1.style.fontSize = 15 + "px";
+      return;
+    case "md":
+      my_h1.innerText = text_id.value;
+      my_h1.style.color = color_id.value;
+      my_h1.style.fontSize = 30 + "px";
+      return;
+    case "lg":
+      my_h1.innerText = text_id.value;
+      my_h1.style.color = color_id.value;
+      my_h1.style.fontSize = 60 + "px";
+      return;
+    case "xl":
+      my_h1.innerText = text_id.value;
+      my_h1.style.color = color_id.value;
+      my_h1.style.fontSize = 90 + "px";
+  }
+}
 // מחשבון
 
 function calculate() {
@@ -48,8 +73,7 @@ function calculate() {
   }
 }
 
-
-// תרגיל 5 
+// תרגיל 5
 function positionElement() {
   switch (corner.value) {
     case "top-left":
@@ -62,8 +86,14 @@ function positionElement() {
         colorInput;
       break;
     case "bottom-left":
+      circleElement.style =
+        "float:right;border-radius:50%;height:100px;width:100px;background" +
+        colorInput;
       break;
     case "bottom-right":
+      circleElement.style =
+        "float:right;border-radius:50%;height:100px;width:100px;background" +
+        colorInput;
       break;
     default:
       break;
