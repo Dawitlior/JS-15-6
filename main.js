@@ -1,31 +1,31 @@
-// function getNumberFromUser() {
-//   let number = id_put.value;
-//   switch (number) {
-//     case 3:
-//       console.log("hello");
-//     case 5:
-//       console.log("goodbay");
-//     case 7:
-//       console.log("tanks");
-//     default:
-//       console.log("no correct massage");
-//   }
-// }
+function getNumberFromUser() {
+  let number = id_put.value;
+  switch (number) {
+    case 3:
+      console.log("hello");
+    case 5:
+      console.log("goodbay");
+    case 7:
+      console.log("tanks");
+    default:
+      console.log("no correct massage");
+  }
+}
 
-// function getNameFromUser() {
-//   let userName = id_put2.value;
-//   let myDiv = document.getElementById("my_div");
-//   switch (userName) {
-//     case "jacob":
-//       document.myDiv.innerText = userName;
-//     case "natan":
-//       document.myDiv.innerText = userName;
-//     case "DALYA":
-//       document.myDiv.innerText = userName;
-//     default:
-//       document.myDiv.innerText = "no correct massage";
-//   }
-// }
+function getNameFromUser() {
+  let userName = id_put2.value;
+  let myDiv = document.getElementById("my_div");
+  switch (userName) {
+    case "jacob":
+      myDiv.innerText = userName;
+    case "natan":
+      myDiv.innerText = userName;
+    case "DALYA":
+      myDiv.innerText = userName;
+    default:
+      myDiv.innerText = "no correct massage";
+  }
+}
 
 
 // 4.	צרו פונקציה המקבלת מהמשתמש טקסט, צבע וגודל, הפונקציה מדפיסה למסך את הטקסט בצבע שהמשתמש בחר בגודל שהמשתמש בחר.
@@ -82,18 +82,15 @@ function positionElement() {
       break;
     case "top-right":
       circleElement.style =
-        "float:right;border-radius:50%;height:100px;width:100px;background" +
         colorInput;
       break;
     case "bottom-left":
       circleElement.style =
-        "float:right;border-radius:50%;height:100px;width:100px;background" +
         colorInput;
       break;
     case "bottom-right":
       circleElement.style =
-        "float:right;border-radius:50%;height:100px;width:100px;background" +
-        colorInput;
+''        colorInput;
       break;
     default:
       break;
